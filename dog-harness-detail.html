@@ -1,14 +1,13 @@
-<!-- dog-harness-detail.html -->
+<!-- Product Detail - dog-harness-detail.html -->
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dog Harness | Muddy Paws Adventure Gear</title>
+    <title>Muddy Paws | Dog Harness</title>
     <!-- styles -->
-      <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Google Font -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,400|Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Material -->
@@ -21,55 +20,80 @@
 </head>
 
 <body>
+    <!-- top black bar -->
     <header>
     <nav class = "top-bar">
-        <a href="#">Product Locator</a>
-        |
-        <a href="#">Sign In</a>
-        |
-        <a href ="#">Cart (0)</a>
-        <i class="fa fa-shopping-cart" style="font-size:20px;color:white;"></i>
+        <div> <p>
+            <a href="#">Product Locator</a>
+            |
+            <a href="#">Sign In</a>
+            |
+            <a href ="#">Cart (0)</a>
+            <i class="fa fa-shopping-cart" style="font-size:20px;color:white;"></i>
+        </p> </div>
     </nav>
     </header>
 
+    <!-- main menu -->
     <div class = "page-header">
-        <div class = "page logo"><a href = "index.html">
-            <i class = "fa fa-paw" style="font-size:60px; -webkit-transform: rotate(-21deg);transform: rotate(-21deg);"></i>
-            <h1 id = "page-name">Muddy Paws Adventure Gear</h1>
-        </a></div>
+        <!-- small page logo -->
+        <a href = "index.html"><div class = "page-logo">
+            <i class = "fa fa-paw"></i>
+            <p class = "page-name">Muddy Paws Adventure Gear</p>
+        </div></a>
+        <!-- menu links -->
         <h2><ul class = "header-nav">
             <li><a href = "shop.html">SHOP</a></li>
             <li><a href = "#">INSPIRATION</a></li>
             <li><a href = "#">ABOUT</a></li>
         </ul></h2>
-        <!-- search bar here -->
+        <!-- search bar -->
         <div class = "search-bar">
-            Search
+            <p>Search</p>
             <i class="material-icons">search</i>
+        </div>
     </div>
 
+    <!-- break line -->
     <hr>
 
-    <h3>SHOP // All Products / Dog Harness</h3>
+    <!-- begin body of page -->
+    <!-- page title link -->
+    <h3><a href = "shop.html">SHOP  //  All Products / Dog Harness </a></h3>
 
-    <aside>
-        <img src="images/dogharness.jpg">
-    </aside>
+    <div class = "detail-wrapper">
+        <!-- image aside -->
+        <aside class = "image-aside">
+            <div class = "detail-image-frame"><img src="images/dogharness.jpg"></div>
+        </aside>
 
-    <main class = "product-detail">
-        <h4>Dog Harness</h4><br>
-        <p id = "detail-price">$35.99</p>
-        <hr>
-        <p id = "detail-desc">A specialty harness built for active dogs, with styles to fit all personalities and different sizes to fit all breeds.</p>
-        <p class = "select">1. Select Color:</p><br>
-        <a href = "#"><img src="images/color-swatch.png"></a><br>
-        <p class = "select">1. Select Size:</p><br>
-        <a href = "#"><img src="images/size-options.png"></a><br>
-        <p class = "select">1. Select Quantity:</p><br>
-        <a href = "#"><img src="images/quantity-options.png"></a><br>
-        <a href = "#"><img src="images/addtocart.png"></a>
-    </main>
-</div>
+        <!-- main product detail -->
+        <main class = "product-detail">
+            <!-- text information -->
+            <h4>Dog Harness</h4>
+            <p class = "detail-price">$35.99</p>
+            <hr class="detail-hr">
+            <p class = "detail-desc">A specialty harness built for active dogs, with styles to fit all personalities and different sizes to fit all breeds.</p>
+            <!-- selection options -->
+            <p class = "select">1. Select Color:</p><br>
+            <a><img src="images/color-swatch.png"></a>
+            <p class = "select">1. Select Size:</p><br>
+            <div class = "size-wrapper">
+                <button class = "select-size"><a>Tiny</a></button>
+                <button class = "select-size"><a>Small</a></button>
+                <button class = "select-size"><a>Medium</a></button>
+                <button class = "select-size"><a>Large</a></button>
+        </div>
+            <p class = "select">1. Select Quantity:</p><br>
+            <div class = "quant-wrapper">
+                <button class = "select-quant-dark"><a>+</a></button>
+                <button class = "select-quant-light"><a>1</a></button>
+                <button class = "select-quant-dark"><a>-</a></button>
+            </div>
+            <!-- add to cart --> <br>
+            <button class = "add-cart"><a>ADD TO CART</a></button>
+        </main>
+    </div>
 
 </body>
 
